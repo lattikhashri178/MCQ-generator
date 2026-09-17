@@ -3,6 +3,9 @@ from huggingface_hub import InferenceClient
 import os
 import re
 
+# --------------------------------------------------
+# PAGE CONFIGURATION
+# --------------------------------------------------
 
 st.set_page_config(
     page_title="AI MCQ Generator",
@@ -10,7 +13,9 @@ st.set_page_config(
     layout="centered"
 )
 
-
+# --------------------------------------------------
+# CUSTOM CSS
+# --------------------------------------------------
 
 st.markdown("""
 <style>
@@ -50,6 +55,9 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+# --------------------------------------------------
+# TITLE
+# --------------------------------------------------
 
 st.markdown(
     '<div class="main-title">📝 AI MCQ Generator</div>',
@@ -63,7 +71,9 @@ st.markdown(
 
 st.markdown("---")
 
-
+# --------------------------------------------------
+# HUGGING FACE TOKEN
+# --------------------------------------------------
 
 HF_TOKEN = os.getenv("HF_TOKEN")
 
@@ -74,13 +84,17 @@ if not HF_TOKEN:
     )
     st.stop()
 
-
+# --------------------------------------------------
+# HUGGING FACE CLIENT
+# --------------------------------------------------
 
 client = InferenceClient(
     api_key=HF_TOKEN
 )
 
-
+# --------------------------------------------------
+# USER INPUT
+# --------------------------------------------------
 
 st.subheader("📚 Create Your MCQs")
 
@@ -106,14 +120,18 @@ difficulty = st.selectbox(
     ]
 )
 
-
+# --------------------------------------------------
+# GENERATE BUTTON
+# --------------------------------------------------
 
 generate = st.button(
     "✨ Generate MCQs",
     use_container_width=True
 )
 
-
+# --------------------------------------------------
+# GENERATE MCQs
+# --------------------------------------------------
 
 if generate:
 
@@ -122,7 +140,7 @@ if generate:
 
     else:
 
-        
+        # AI Prompt
         prompt = f"""
 You are an expert educational MCQ generator.
 
@@ -203,16 +221,18 @@ Continue the same format until Question {number}.
 
             result = response.choices[0].message.content
 
-           
+            # --------------------------------------------------
+            # CLEAN AI OUTPUT
+            # --------------------------------------------------
 
             result = result.strip()
 
-           
+            # Remove markdown code blocks if AI adds them
             result = result.replace("```text", "")
             result = result.replace("```markdown", "")
             result = result.replace("```", "")
 
-          
+            # Make options appear on separate lines
             result = re.sub(
                 r'\s+A\.\s*',
                 '\n\nA. ',
@@ -243,14 +263,17 @@ Continue the same format until Question {number}.
                 result
             )
 
-         
+            # Make questions separated
             result = re.sub(
                 r'\s+(Question\s+\d+:)',
                 r'\n\n\1',
                 result
             )
 
-           
+            # --------------------------------------------------
+            # DISPLAY RESULT
+            # --------------------------------------------------
+
             st.success("✅ MCQs generated successfully!")
 
             st.markdown("---")
@@ -259,7 +282,10 @@ Continue the same format until Question {number}.
 
             st.markdown(result)
 
-            
+            # --------------------------------------------------
+            # DOWNLOAD BUTTON
+            # --------------------------------------------------
+
             st.markdown("---")
 
             st.download_button(
