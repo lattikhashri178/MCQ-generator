@@ -50,9 +50,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# --------------------------------------------------
-# TITLE
-# --------------------------------------------------
 
 st.markdown(
     '<div class="main-title">📝 AI MCQ Generator</div>',
@@ -246,7 +243,7 @@ Continue the same format until Question {number}.
                 result
             )
 
-            # Make questions separated
+         
             result = re.sub(
                 r'\s+(Question\s+\d+:)',
                 r'\n\n\1',
