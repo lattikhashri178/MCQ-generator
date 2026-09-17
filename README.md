@@ -59,9 +59,12 @@ Regular Expressions (re)
 📂 Project Structure
 
 MCQ-Generator/
+
 │
 ├── app.py
+
 ├── requirements.txt
+
 └── README.md
 
 <img width="1127" height="630" alt="1" src="https://github.com/user-attachments/assets/f52b9397-a4f9-48e3-a486-a101547e32e2" />
@@ -87,21 +90,36 @@ Contains the project documentation.
 🔄 Project Workflow
 
 User Enters Topic
+
         ↓
+        
 Select Number of Questions
+
         ↓
+        
 Select Difficulty
+
         ↓
+        
 Create AI Prompt
+
         ↓
 Hugging Face AI Model
+
         ↓
+        
 Generate MCQs
+
         ↓
+        
 Format Questions and Options
+
         ↓
+        
 Display MCQs
+
         ↓
+        
 Download MCQs
 
 
@@ -129,6 +147,7 @@ The application requires a Hugging Face access token for AI inference.
 Set the token as an environment variable.
 
 Windows PowerShell
+
 $env:HF_TOKEN="YOUR_HUGGINGFACE_TOKEN"
 
 Do not share or upload your Hugging Face token to GitHub.
