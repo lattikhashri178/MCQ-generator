@@ -13,6 +13,8 @@ Provide different difficulty levels
 Generate four options for each question
 Display the correct answer
 Allow generated MCQs to be downloaded
+
+
 ✨ Features
 📚 Topic-based MCQ generation
 🔢 Generate 1–10 questions
@@ -22,12 +24,16 @@ A, B, C, and D options displayed separately
 ✅ Correct answer for every question
 📥 Download generated MCQs as a text file
 🖥️ Simple Streamlit interface
+
+
 🛠️ Technologies Used
 Python
 Streamlit
 Hugging Face
 Hugging Face InferenceClient
 Regular Expressions (re)
+
+
 📂 Project Structure
 MCQ-Generator/
 │
@@ -40,6 +46,7 @@ MCQ-Generator/
 <img width="1166" height="655" alt="4" src="https://github.com/user-attachments/assets/2862c01b-a807-4284-8a9d-383b9a258451" />
 <img width="1397" height="570" alt="5" src="https://github.com/user-attachments/assets/1595da62-465d-4a13-b3fc-bce1bf05ec7c" />
 
+
 app.py
 
 Contains the main Streamlit application and AI-based MCQ generation logic.
@@ -51,6 +58,7 @@ Contains the Python libraries required to run the application.
 README.md
 
 Contains the project documentation.
+
 
 🔄 Project Workflow
 User Enters Topic
@@ -70,6 +78,8 @@ Format Questions and Options
 Display MCQs
         ↓
 Download MCQs
+
+
 🚀 Installation
 1. Clone or download the project
 
@@ -84,6 +94,8 @@ pip install -r requirements.txt
 Or:
 
 pip install streamlit huggingface_hub
+
+
 🔑 Hugging Face Token Setup
 
 The application requires a Hugging Face access token for AI inference.
@@ -95,6 +107,7 @@ $env:HF_TOKEN="YOUR_HUGGINGFACE_TOKEN"
 
 Do not share or upload your Hugging Face token to GitHub.
 
+
 ▶️ Run the Application
 
 Run the following command in the terminal:
@@ -102,6 +115,7 @@ Run the following command in the terminal:
 streamlit run app.py
 
 The application will open in the browser.
+
 
 💡 Example
 Input
@@ -123,6 +137,7 @@ Correct Answer: A
 
 The application generates the requested number of questions in the same format.
 
+
 📥 Download
 
 After generating the MCQs, the user can click:
@@ -132,6 +147,8 @@ Download MCQs
 The generated questions are saved as:
 
 generated_mcqs.txt
+
+
 🎓 Learning Outcomes
 
 Through this project, I learned:
@@ -144,6 +161,7 @@ AI-based question generation
 Text formatting using Regular Expressions
 Environment variable management
 Building an AI-powered educational application
+
 👩‍💻 Author
 
 LATTIKHASHRI.N.
