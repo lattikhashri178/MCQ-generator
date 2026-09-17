@@ -6,40 +6,64 @@ AI MCQ Generator is a simple AI-powered web application built using Python and S
 The application uses a Hugging Face AI language model to create unique and educational MCQs with four options and the correct answer.
 
 🎯 Objectives
+
 Generate MCQs automatically using AI
+
 Allow users to enter any educational topic
+
 Allow users to select the number of questions
+
 Provide different difficulty levels
+
 Generate four options for each question
+
 Display the correct answer
+
 Allow generated MCQs to be downloaded
 
 
+
 ✨ Features
+
 📚 Topic-based MCQ generation
+
 🔢 Generate 1–10 questions
+
 🎯 Easy, Medium, and Hard difficulty levels
+
 🤖 AI-powered question generation
+
 A, B, C, and D options displayed separately
+
 ✅ Correct answer for every question
+
 📥 Download generated MCQs as a text file
+
 🖥️ Simple Streamlit interface
 
 
+
 🛠️ Technologies Used
+
 Python
+
 Streamlit
+
 Hugging Face
+
 Hugging Face InferenceClient
+
 Regular Expressions (re)
 
 
 📂 Project Structure
+
 MCQ-Generator/
 │
 ├── app.py
 ├── requirements.txt
 └── README.md
+
 <img width="1127" height="630" alt="1" src="https://github.com/user-attachments/assets/f52b9397-a4f9-48e3-a486-a101547e32e2" />
 <img width="1217" height="590" alt="2" src="https://github.com/user-attachments/assets/78cf9079-dd33-416c-af74-3d614a47dbd9" />
 <img width="1192" height="592" alt="3" src="https://github.com/user-attachments/assets/b248e961-925b-4019-8dd8-49068481b3fa" />
@@ -61,6 +85,7 @@ Contains the project documentation.
 
 
 🔄 Project Workflow
+
 User Enters Topic
         ↓
 Select Number of Questions
@@ -81,6 +106,7 @@ Download MCQs
 
 
 🚀 Installation
+
 1. Clone or download the project
 
 Open the project folder in VS Code.
@@ -118,11 +144,17 @@ The application will open in the browser.
 
 
 💡 Example
+
 Input
+
 Topic: Python Programming
+
 Number of Questions: 5
+
 Difficulty: Medium
+
 Output
+
 Question 1: What is the correct way to define a function in Python?
 
 A. def sum(a, b): return a + b
@@ -154,12 +186,19 @@ generated_mcqs.txt
 Through this project, I learned:
 
 Python application development
+
 Streamlit web application development
+
 Prompt engineering
+
 Hugging Face AI model integration
+
 AI-based question generation
+
 Text formatting using Regular Expressions
+
 Environment variable management
+
 Building an AI-powered educational application
 
 👩‍💻 Author
