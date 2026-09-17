@@ -87,42 +87,6 @@ README.md
 Contains the project documentation.
 
 
-🔄 Project Workflow
-
-User Enters Topic
-
-        ↓
-        
-Select Number of Questions
-
-        ↓
-        
-Select Difficulty
-
-        ↓
-        
-Create AI Prompt
-
-        ↓
-Hugging Face AI Model
-
-        ↓
-        
-Generate MCQs
-
-        ↓
-        
-Format Questions and Options
-
-        ↓
-        
-Display MCQs
-
-        ↓
-        
-Download MCQs
-
-
 🚀 Installation
 
 1. Clone or download the project
