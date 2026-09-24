@@ -1,11 +1,11 @@
-📝 AI MCQ Generator
-📌 Overview
+ AI MCQ Generator
+ Overview
 
 AI MCQ Generator is a simple AI-powered web application built using Python and Streamlit. It generates multiple-choice questions automatically based on a topic provided by the user.
 
 The application uses a Hugging Face AI language model to create unique and educational MCQs with four options and the correct answer.
 
-🎯 Objectives
+ Objectives
 
 Generate MCQs automatically using AI
 
@@ -23,27 +23,27 @@ Allow generated MCQs to be downloaded
 
 
 
-✨ Features
+ Features
 
-📚 Topic-based MCQ generation
+ Topic-based MCQ generation
 
-🔢 Generate 1–10 questions
+ Generate 1–10 questions
 
-🎯 Easy, Medium, and Hard difficulty levels
+ Easy, Medium, and Hard difficulty levels
 
-🤖 AI-powered question generation
+ AI-powered question generation
 
 A, B, C, and D options displayed separately
 
-✅ Correct answer for every question
+ Correct answer for every question
 
-📥 Download generated MCQs as a text file
+ Download generated MCQs as a text file
 
-🖥️ Simple Streamlit interface
+ Simple Streamlit interface
 
 
 
-🛠️ Technologies Used
+ Technologies Used
 
 Python
 
@@ -56,7 +56,7 @@ Hugging Face InferenceClient
 Regular Expressions (re)
 
 
-📂 Project Structure
+ Project Structure
 
 MCQ-Generator/
 
@@ -87,7 +87,7 @@ README.md
 Contains the project documentation.
 
 
-🚀 Installation
+ Installation
 
 1. Clone or download the project
 
@@ -104,7 +104,7 @@ Or:
 pip install streamlit huggingface_hub
 
 
-🔑 Hugging Face Token Setup
+ Hugging Face Token Setup
 
 The application requires a Hugging Face access token for AI inference.
 
@@ -117,7 +117,7 @@ $env:HF_TOKEN="YOUR_HUGGINGFACE_TOKEN"
 Do not share or upload your Hugging Face token to GitHub.
 
 
-▶️ Run the Application
+ Run the Application
 
 Run the following command in the terminal:
 
@@ -126,7 +126,7 @@ streamlit run app.py
 The application will open in the browser.
 
 
-💡 Example
+ Example
 
 Input
 
@@ -153,7 +153,7 @@ Correct Answer: A
 The application generates the requested number of questions in the same format.
 
 
-📥 Download
+ Download
 
 After generating the MCQs, the user can click:
 
@@ -164,7 +164,7 @@ The generated questions are saved as:
 generated_mcqs.txt
 
 
-🎓 Learning Outcomes
+ Learning Outcomes
 
 Through this project, I learned:
 
@@ -184,6 +184,6 @@ Environment variable management
 
 Building an AI-powered educational application
 
-👩‍💻 Author
+ Author
 
 LATTIKHASHRI.N.
